@@ -1,0 +1,49 @@
+@font-face {
+	font-family: 'GothamPro'; 
+	src: local('GothamPro'),
+		url(Gotham\ Pro/gothampro_light.ttf); 
+}
+
+body{
+    background-color: #353638;
+}
+button{
+    background-color: inherit;
+    border: none;
+}
+button:focus,button:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+.timer{
+    width: 225px;
+    height: 120px;
+    background-color: #696969;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 45px 50px;
+}
+.time{
+    text-align: center;
+    font-size: 22px;
+    font-family: 'GothamPro';
+    color: #fff;
+    padding-bottom: 10px;
+    width: 100%;
+    border-bottom: 2px #fff solid;
+}
+.blockAdd{
+    width: 225px;
+    height: 120px;
+    background-color: #696969;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 45px 50px;
+}

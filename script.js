@@ -1,7 +1,7 @@
 Vue.component('timer', {
   template: `
   <div class="timer">
-      <div  class="time" :class="{ activeTimer: isActive }">
+      <div :class="{ activeTimer: isActive }" class="time">
           {{ time }}
       </div>
       <div>
@@ -20,6 +20,7 @@ Vue.component('timer', {
       int: null,
       time: '00',
       isActive: false,
+      activeColor:'#fff'
     }
   },
    props: [ 'items' ],

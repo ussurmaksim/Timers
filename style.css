@@ -30,8 +30,8 @@ button:hover{
     margin: 45px 50px;
 }
 .activeTimer{
-    color: #fff;
-    border-color: #fff;
+    color: #fff !important;
+    border-color: #fff !important;
 }
 .time{
     text-align: center;

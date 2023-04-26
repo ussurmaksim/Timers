@@ -29,14 +29,18 @@ button:hover{
     flex-wrap: wrap;
     margin: 45px 50px;
 }
+.activeTimer{
+    color: #fff;
+    border-color: #fff;
+}
 .time{
     text-align: center;
     font-size: 22px;
     font-family: 'GothamPro';
-    color: #fff;
+    color: #9E9E9E;
     padding-bottom: 10px;
     width: 100%;
-    border-bottom: 2px #fff solid;
+    border-bottom: 2px #9E9E9E solid;
 }
 .blockAdd{
     width: 225px;

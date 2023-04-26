@@ -1,13 +1,14 @@
 Vue.component('timer', {
   template: `
   <div class="timer">
-      <div class="time">
+      <div  class="time" :class="{ activeTimer: isActive }">
           {{ time }}
       </div>
       <div>
       <button class="stop" v-if="isActive" @click="stop"><img src="img/pause.svg" alt="stop"></button>
       <button class="start" v-else @click="start"><img src="img/triangle.svg" alt="start"></button>
-      <button class="clear" @click="reset"><img src="img/square.svg" alt="clear"></button>
+      <button class="clear" v-if="isActive" @click="reset"><img src="img/squareActive.svg" alt="clear"></button>
+      <button class="clear" v-else @click="reset"><img src="img/square.svg" alt="clear"></button>
       </div>
   </div>
   `,
